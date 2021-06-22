@@ -36,32 +36,37 @@ header {
   width: 100%;
 }
 
-ul {
+header ul {
   display: flex;
   width: 100%;
   justify-content: right;
   margin: 2rem 0;
   font-size: 0.85rem;
 }
-ul a {
+header ul a {
   padding: 1rem;
   color: #4f4c48;
   text-transform: uppercase;
 }
-ul a:hover, ul a.active {
+header ul a:hover, header ul a.active {
   padding-bottom: 48px;
   border-bottom: 5px solid #0282f9;
 }
 
-main .fumettii div {
+main .fumetti {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .fumetti .carta {
   flex-basis: calc(100% / 6);
   padding: 5px;
 }
-main .fumettii div img {
+main .fumetti .carta img {
   width: 150px;
   height: 150px;
 }
-main .fumettii div p {
+main .fumetti .carta p {
   font-size: 0.8rem;
   text-transform: uppercase;
 }
@@ -81,4 +86,91 @@ button {
 }
 button:hover {
   background-color: #14538f;
+}
+
+footer {
+  height: 500px;
+  background-image: url("/css/img/footer-bg.jpg");
+  background-size: cover;
+}
+
+footer .up-fot {
+  height: 450px;
+}
+
+footer .up-fot .listy {
+  display: flex;
+  width: 50%;
+  padding: 3rem 1rem;
+}
+footer .up-fot .listy a,
+footer .up-fot .listy div {
+  flex-basis: calc(100% / 3);
+  text-transform: capitalize;
+}
+footer .up-fot .listy h5 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  padding-top: 1rem;
+  color: white;
+}
+footer .up-fot .listy a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+  color: #878787;
+}
+
+footer .ft-logo {
+  width: 50%;
+  display: flex;
+  background-image: url("/css/img/dc-logo-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer .down-fot {
+  padding: 50px 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #303030;
+}
+
+footer .ft-but {
+  width: 50%;
+}
+footer .ft-but button {
+  background-color: #303030;
+  border: 3px solid #0282f9;
+  padding: 15px;
+}
+footer .ft-but button a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer .socials {
+  width: 50%;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer .socials ul {
+  list-style: none;
+}
+footer .socials ul li {
+  padding: 5px;
+  display: inline;
+}
+
+footer .socials h5 {
+  padding-right: 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #0282f9;
 }

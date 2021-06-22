@@ -1,4 +1,8 @@
-main .fumettii div{
+main .fumetti{
+    display: flex;
+    flex-wrap: wrap ;
+}
+main .fumetti  .carta{
     flex-basis: calc(100% / 6);
     padding: 5px;
     img{
