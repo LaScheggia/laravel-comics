@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
 @section('content')
-    <main class="container">
-        <div class="fumetti">
+    <main class="">
+        <div class="fumetti container">
             @foreach ($fumetti as $comics)
             <div class="carta">
                 <img src="{{ $comics['thumb'] }}">
