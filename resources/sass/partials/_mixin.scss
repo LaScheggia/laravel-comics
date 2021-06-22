@@ -1,0 +1,10 @@
+@mixin btn-dc{
+    background-color: $blue-dc;
+    padding: 10px 20px;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+    &:hover{
+      background-color: rgb(20, 83, 143);
+    }
+}
