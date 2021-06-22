@@ -1,0 +1,13 @@
+.hero{
+    background-image: url('/css/img/jumbotron.jpg');
+    background-size: cover;
+    height: 350px;
+
+}
+
+
+button{
+    @include btn-dc;
+}
+
+
